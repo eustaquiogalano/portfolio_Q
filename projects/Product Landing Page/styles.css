@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--secondary-color);
+    width: 100w;
+}
+
+:root {
+    --main-color: rgba(48,157,254,255);
+    --secondary-color: #f0f8ff;
+    --tertiary-color: rgba(184,244,239,255);
+}
+
+/*------------------ HEADER ----------------------------------*/
+
+header {
+    background-color: var(--main-color);
+    height: 6rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--secondary-color);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#search-bar {
+    height: 55%;
+    width: 40%;
+    border: 0;
+    border-radius: 20px;
+}
+
+#nav-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding: 0.5rem;
+}
+
+#nav-links > i {
+    display: none;
+}
+
+nav > a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--secondary-color);
+    text-decoration:dashed;
+    font-size: 1.4rem;
+}
+
+/*------------------ HEADER ----------------------------------*/
+
+/*------------------ MAIN ----------------------------------*/
+
+#main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#product {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin: 50px;
+    border-radius: 50px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#product > h3 {
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#product-container > p {
+    font-size: clamp(1rem, 3vw, 2rem);
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* width: clamp(300px, 60vw, 700px); */
+    min-width: 30ch;
+    max-width: 40ch;
+    text-align: left;
+}
+
+#product-container > img {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 10px;
+}
+
+#offer {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+
+}
+
+#background {
+    height: 100%;
+    width: 60%;
+    background-color: rgba(48,157,254,255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+ }
+
+ .off {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: clamp(100px, 25vw, 400px);
+ }
+
+.pcs {
+    height: 100%;
+    width: 100%;
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding-top: 50px;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#inputpcs {
+    height: 40%;
+    width: 60%;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+#o1 , #o2 , #o3 {
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    border: 0;
+    background-color:var(--tertiary-color);
+    border-radius: 0px 0px 20px 20px;
+    cursor: pointer;
+} 
+
+#order {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+#order > div {
+    height: 25rem;
+    width: 40%;
+    background-color: rgba(184,244,239,255);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#order > div > p {
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2em;
+}
+
+/*------------------ MAIN ----------------------------------*/
+
+/*------------------ FOOTER ----------------------------------*/
+
+
+footer {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 50% 50%;
+    background-color: var(--main-color);
+    padding: 10px;
+    height: 10rem;
+    width: 100%;
+}
+
+#social-icons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+
+.socials {
+    height: 60%;
+    width: 50%;
+}
+
+#others {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+#others > p {
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*------------------ FOOTER ----------------------------------*/
+
+
+/*---------------------- MEDIA QUERIES ------------------------------------*/
+
+
+/*--------------- 425px to 767px -----------*/
+
+@media only screen and (min-width: 320px) and (max-width:767px) {
+
+    header {
+        grid-template-columns: 80% 20%;
+    }
+    #nav-links > a {
+        display: none;
+    }
+
+    #nav-links {
+        place-items: center end;
+    }
+
+    #nav-links > i {
+        display:block;
+    }
+
+    #product-container {
+        flex-direction: column;
+    }
+
+    #product-container > p {
+        text-align: center;
+    }
+
+    #product-container > img  {
+        height: auto;
+        width: 50%;
+    }
+
+    #background {
+        width: 90%;
+    }
+
+    .off {
+        height: 60%;
+    }
+
+    .pcs {
+        font-size: 1rem;
+    }
+
+    #inputpcs {
+        height: 50%;
+        width: 60%;
+        font-size: 1rem;
+    }
+    
+    #o1 , #o2 , #o3 {
+        font-size: 1rem;
+    }
+
+    #order > div {
+        height: 20vh;
+        width: 60%;
+    }
+
+    #order > div > p {
+        font-size: 1rem;
+    }
+
+    #others {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding-left: 2rem;
+    }
+
+    #others > p {
+        font-size: 1rem;
+
+    }
+}
+
+/*--------------- 425px -----------*/
+
+
+/*--------------- 768px to 1023px -----------*/
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+
+    header {
+        grid-template-columns: 85% 15%;
+    }
+
+    #nav-links > a {
+        display: none;
+    }
+
+    #nav-links {
+        place-items: center end;
+    }
+
+    #nav-links > i {
+        display:block;
+    }
+
+    #product-container {
+        flex-direction: column;
+    }
+    #product-container > p {
+        text-align: center;
+    }
+
+    #background {
+        width: 90%;
+    }
+
+    .off {
+        margin: 1rem;
+    }
+
+    #order > div {
+        width: 60%;
+    }
+
+    #order > div > p {
+        font-size: 2.5rem;
+
+    }
+    #others {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: start;
+       padding-left: 2rem;
+    }
+
+    #others > p {
+        margin-bottom: 1rem;
+    }
+
+}
+
+/*--------------- 768px -----------*/
+
+
+/*--------------- 1024px wider -----------*/
+
+@media only screen and (min-width: 1024px) {
+
+    #background {
+        width: 80%;
+    }
+
+    #order > div > p {
+        font-size: 2.5rem;
+    }
+
+    #order > div {
+        width: 60%;
+    }
+}
+
+/*--------------- 1024px -----------*/
+
+/*---------------------- MEDIA QUERIES ------------------------------------*/

@@ -1,0 +1,373 @@
+/* Universals */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black; */
+}
+
+:root {
+  --main-color: antiquewhite;
+  --bot-margin: clamp(0.5rem, 2vw, 1rem); /*0.5rem, 2vw, 1rem*/
+  --overall-pad: 1rem;
+  --overall-border-radius: 10px;
+  --border-main-style: 2px solid rgb(46, 46, 46);
+  --article-width: clamp(250px, 60%, 1000px); /*250px, 50%, 1000px*/
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Bangers', Verdana;
+  font-weight: light;
+}
+
+body {
+  background: url(/IMAGES/body\ background.jpg);
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-bg-color {
+  background-color: var(--main-color);
+}
+
+/*------------------- HEADER ------------------------------*/
+
+header {
+  width: 100%;
+  height: 15vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+  margin-bottom: var(--bot-margin);
+  border: var(--border-main-style);
+}
+
+.d-logo-container { 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+  width: clamp(50px , 15%, 150px);         /*90px , 15%, 150px*/
+  height: clamp(50px , 90%, 150px);       /*90px , 90%, 150px*/
+  border: 2px solid black;
+  border-radius: 100px;
+  display: block;
+}
+
+.shortcut-container { 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* bigasan CSS */
+.bigasan-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bigas-start {
+  width: 100%;
+  height: auto;
+  padding: var(--overall-pad);
+}
+
+/*------------------- HEADER ------------------------------*/
+
+
+/*------------------- MAIN ------------------------------*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.store-img {
+  width: clamp(250px, 50%,  700px); /*250px 50% 700px*/
+  height: auto;
+  border: var(--border-main-style);
+  border-radius: 5%;
+  display: block;
+  margin-bottom: var(--bot-margin);
+}
+
+.brief {
+  width: var(--article-width);
+  height: auto;
+  border: var(--border-main-style);
+  border-radius: var(--overall-border-radius);
+  padding: var(--overall-pad);
+  margin-bottom: var(--bot-margin);
+}
+
+.xp-business { /* Experience in business */
+  width: var(--article-width);
+  height: auto;
+  border: var(--border-main-style);
+  border-radius: var(--overall-border-radius);
+  padding: var(--overall-pad);
+  margin-bottom: var(--bot-margin);
+}
+
+.table-contribution { /* div */
+  width: clamp(290px, 40%, 600px); /*290px, 40%, 600px*/
+  height: auto;
+  border: var(--border-main-style);
+  border-radius: var(--overall-border-radius);
+  padding: var(--overall-pad);
+  margin-bottom: var(--bot-margin);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contribution { /* table */
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-main-style);
+}
+
+th.contri, td.amount {
+  text-align: center;
+}
+
+.member {
+  width: 60%;
+  text-align: left;
+}
+
+.advice {
+  width: var(--article-width);
+  height: auto;
+  border: var(--border-main-style);
+  border-radius: var(--overall-border-radius);
+  padding: var(--overall-pad);
+  margin-bottom: var(--bot-margin);
+}
+
+.top { /* OKAY */
+  width: 150px;
+  height: auto;
+  border: var(--border-main-style);
+  border-radius: var(--overall-border-radius);
+  padding: var(--overall-pad);
+  margin-bottom: var(--bot-margin);
+}
+
+/* BIGASAN CSS */
+.bigas-brief {
+  width: var(--article-width);
+  border: var(--border-main-style);
+  border-radius: var(--overall-border-radius);
+  padding: var(--overall-pad);
+  margin-bottom: var(--bot-margin);
+}
+
+.bigas-contribution { /* div */
+  width: clamp(290px, 40%, 600px);
+  height: auto;
+  border-radius: var(--overall-border-radius);
+  border: var(--border-main-style);
+  margin-bottom: var(--bot-margin);
+  padding: var(--overall-pad);
+}
+
+.contribution-bigasan { /* table */
+  border-radius: 5px;
+  margin: auto auto;
+  width: 100%;
+}
+
+.bigasan { /* th td */
+  text-align: left;
+  padding: 5px;
+}
+
+.homepage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+a:link, :visited, :hover, :active {
+  color: rgb(46, 46, 46);
+}
+
+article p {
+  font-size: clamp(14px, 1rem, 18px);
+}
+
+h1 {
+  font-size: clamp(24px, 4vw, 48px);
+}
+
+h3 {
+  font-size: clamp(18px, 2.5vw, 28px)
+}
+
+/*------------------- MAIN ------------------------------*/
+
+
+/*------------------- FOOTER ------------------------------*/
+
+footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  border: var(--border-main-style);
+}
+
+.other-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 60%;
+}
+
+/*------------------- FOOTER ------------------------------*/
+
+
+/*------------------- ABOUT US ------------------------------*/
+
+.about-us {
+  padding: 20px 20px; 
+  margin: var(--bot-margin) auto ;
+  width: 15%;
+  border: var(--border-main-style);
+  border-radius: var(--overall-border-radius);
+}
+
+.reginald, 
+.eustaquio {
+  width: var(--article-width);
+  height: auto;
+  margin-bottom: var(--bot-margin);
+  padding: var(--overall-pad);
+  border: var(--border-main-style);
+  border-radius: var(--overall-border-radius);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+} 
+
+.footer {
+  width: var(--article-width);
+  border-radius: var(--overall-border-radius);
+  margin-bottom: var(--bot-margin);
+}
+
+.about-us-footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: var(--overall-pad);
+}
+
+img.Regipic,
+img.Eustaquiopic {
+  width: 200px;
+  height: 200px;
+  border-radius: var(--overall-border-radius);
+  border: var(--border-main-style);
+
+}
+
+/*------------------- ABOUT US ------------------------------*/
+
+
+/*------------------- PROOF OF PURCHASE ------------------------------*/
+
+.satisfied-costumer {
+  width:30%;
+  margin: var(--bot-margin) 0 ;
+  padding: var(--overall-pad);
+  border-radius: var(--overall-border-radius);
+  border: var(--border-main-style);
+}
+
+.main-body-pop {
+  background: none;
+  border-radius: var(--overall-border-radius);
+  width: 70%;
+  height: auto;
+  margin: var(--bot-margin) 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.domino-img, .kalakal-img, .totoy-img, .tricycle-img {
+  margin: var(--bot-margin) ;
+  border-radius: var(--overall-border-radius);
+  border: var(--border-main-style);
+  background: transparent;
+ 
+}
+
+.homepage-pop {
+  width: 30%;
+  height: auto;
+  padding: var(--overall-pad);
+  margin: var(--bot-margin) 0;
+  border: var(--border-main-style);
+  border-radius: var(--overall-border-radius);
+}
+
+/*------------------- PROOF OF PURCHASE ------------------------------*/
+
+
+/*------------------- MEDIA QUERIES ------------------------------*/
+
+
+/*max-width: 320px*/
+
+@media only screen and (max-width:425px) { /* 425px below */
+
+  header {
+    height: 8vh;
+  }
+
+  .Name {
+    display: none;
+  }
+
+  .shortcut-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .shortcut-container a {
+    font-size: .9rem;
+  }
+}

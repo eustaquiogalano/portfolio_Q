@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="case.css">
+    <title>Computer case</title>
+</head>
+<body>
+    <div id="top-navigation">
+        <button id="search-button">Search</button>
+        <input type="text" id="search-bar" placeholder="Search items here....">
+    </div>
+    <div id="case-container">
+        <div id="back-container">
+            <button id="back-to-main-button"><a href="main.html">Back</a><P</button>
+        </div>
+        <div id="case-details-container">
+            <div id="appearance" class="case">
+                <img src="images/case.jpeg" alt="computer case" id="case-img">
+            </div>
+            <div id="price" class="case">
+                <h2>Computer Case Atx</h2>
+                <h3>Specicifations:</h3>
+                <p> Motherboard: MICRO ATX, MINI ITX <br>
+                    Side Panel: Acrylic <br>
+                    Drive Bay: 1 X HDD 3.5", 2 X SSD 2.5" <br>
+                    PSU Shroud: Full PSU Shround <br>
+                    Fan Slots: Front: 2x 120MM Fan | Back: 1x 80MM Fan <br> 
+                    Front Panel: 2x USB 2.0 <br>
+                    Case Dimension: 320 X 145 X 280MM <br>
+                </p>
+                <h2>Quantity:</h2>
+                <div id="quantity-option-container">
+                    <button id="minus" class="item-quantity">-</button>
+                    <p id="quantity-display" class="item-quantity">0</p>
+                    <button id="plus" class="item-quantity">+</button>
+                </div>
+                <h2>Shipping fee:</h2>
+                <div>
+                    <button id="withinMM" class="shipping">Metro Manila</button>
+                    <button id="outsideMM" class="shipping">Outside M.M.</button>
+                </div>
+                <h2>Total Price: </h2>
+                <div id="item-price">
+                    <p id="price-display">$0</p>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <script src="case.js"></script>
+</body>
+</html>

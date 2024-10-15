@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/e37a65dae7.js" crossorigin="anonymous"></script>
+        <title>Powdered Tawas</title>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <h1>Hailey</h1>
+                <input id="search-bar" type="text" placeholder="    Search products">
+            </div>
+            <nav id="nav-links">
+                <a href="#offer">Offers</a>
+                <a href="#main">Products</a>
+                <a href="#foot">About Us </a>
+                <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
+            </nav>
+        </header>
+        <main id="main">
+            <section id="product">
+                <h3>Tawas</h3>
+                <article id="product-container">
+                    <img src="images/tawas-solo.png" alt="Tawas">
+                    <p id="product-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Necessitatibus doloribus facere porro fugiat ipsum libero 
+                        ipsam corrupti veniam aut repellat placeat, mollitia vitae, 
+                        amet nihil, ullam distinctio totam illo quisquam!
+                    </p>
+                </article> 
+            </section>
+            <section id="offer">
+                <div id="background">
+                    <div id="offer-1" class="off">
+                        <p class="pcs">12 pcs</p>
+                        <button id="o1">$10</button>
+                    </div>
+                    <div id="offer-2" class="off">
+                        <p class="pcs">6 pcs</p>
+                        <button id="o2">$5</button>
+                    </div>
+                    <div id="offer-3" class="off">       
+                        <p class="pcs">Pieces: <br>
+                            <input id="inputpcs" type="number">   
+                        </p>
+                        <button id="o3">$</button>
+                    </div>
+                </div>
+            </section>
+            <section id="order">
+                <div id="order-container">
+                    <p>You ordered: <span id="order-update"></span></p>
+                </div>
+            </section>
+        </main>
+        <footer id="foot">
+            <div id="others">
+                <p>Other Products</p>
+                <p>Create Account</p>
+            </div>
+            <div id="social-icons-container">
+                <i class="fa-brands fa-facebook fa-bounce fa-2xl"></i>
+                <i class="fa-brands fa-youtube fa-bounce fa-2xl"></i>
+                <i class="fa-brands fa-twitter fa-bounce fa-2xl"></i>
+                <i class="fa-brands fa-instagram fa-bounce fa-2xl"></i>            
+            </div>
+        </footer>
+        <script src="functionality.js"></script>
+    </body>
+</html>
