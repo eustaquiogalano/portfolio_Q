@@ -115,7 +115,7 @@ main {
 
     #q-image {
       width: 35%;
-      background-image: url(/images/no_bg_half_body.png);
+      background-image: url(./images/no_bg_half_body.png);
       background-size: contain;
       background-repeat: no-repeat;
     }
