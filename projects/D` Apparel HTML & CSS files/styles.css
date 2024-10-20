@@ -8,7 +8,7 @@
 
 :root {
   --main-color: antiquewhite;
-  --bot-margin: clamp(0.5rem, 2vw, 1rem); /*0.5rem, 2vw, 1rem*/
+  --bot-margin: 100px;  /* clamp(0.5rem, 2vw, 1rem) */
   --overall-pad: 1rem;
   --overall-border-radius: 10px;
   --border-main-style: 2px solid rgb(46, 46, 46);
@@ -71,6 +71,10 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  a {
+    font-size: 30px;
+  }
 }
 
 /* bigasan CSS */
@@ -216,6 +220,7 @@ p {
 
 a:link, :visited, :hover, :active {
   color: rgb(46, 46, 46);
+  text-decoration: none;
 }
 
 article p {
