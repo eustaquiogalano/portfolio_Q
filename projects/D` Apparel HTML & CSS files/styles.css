@@ -250,6 +250,10 @@ footer {
   display: flex;
   justify-content: center;
   border: var(--border-main-style);
+  
+  a {
+    font-size: 25px;
+  }
 }
 
 .other-links {
@@ -259,6 +263,8 @@ footer {
   flex-direction: row;
   height: 100%;
   width: 60%;
+
+  
 }
 
 /*------------------- FOOTER ------------------------------*/
