@@ -1,30 +1,28 @@
 
 const searchBar = document.getElementById('search-bar');
 const searchButton = document.getElementById('search-button');
-const listOfItems = document.querySelectorAll(`.item`);
+const listOfAllProducts = document.querySelectorAll(`.item`);
 const initialItems = document.getElementById('initial-items');
 
 
 
 searchButton.addEventListener('click', () => {
 
-  let generatedHTML = '';
+  let generatedHTMLForDisplayingProducts = '';
 
-  listOfItems.forEach(item => {
+  listOfAllProducts.forEach(product => {
 
-    // checks the search bar
-    // looks for matching name and user input
-    if ( item.innerText.toLowerCase().includes(`${searchBar.value}`) ) {
-      generatedHTML += `
+    // check the text content of each element and its descendants for 
+    // matching names inputted in the search bar 
+    if ( product.innerText.toLowerCase().includes(`${searchBar.value}`) ) {
+      generatedHTMLForDisplayingProducts += `
         <div class="item">
-          ${item.innerHTML}
+          ${product.innerHTML}
         </div>
       `;
     }
   });
 
-  initialItems.innerHTML = generatedHTML;
-  generatedHTML = '';
+  initialItems.innerHTML = generatedHTMLForDisplayingProducts;
+  generatedHTMLForDisplayingProducts = '';
 });
-// where we left
-// filter system done
