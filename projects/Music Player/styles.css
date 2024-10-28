@@ -140,7 +140,7 @@ main {
 }
 
 .log-sign-container button {
-    width: 40px; /* 15% */
+    width: 80px; /* 15% */
     height: auto;
     border: none;
     margin: 0.5rem;
