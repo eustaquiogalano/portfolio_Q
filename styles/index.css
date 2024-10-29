@@ -45,6 +45,10 @@ header {
     p {
       font-size: .9rem;
       margin: 1rem;
+
+      a {
+        text-decoration: none;
+      }
     }
   }
 
