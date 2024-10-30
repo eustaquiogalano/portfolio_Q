@@ -3,14 +3,14 @@ const chatBox = document.getElementById('chat-box');
 const chatBoxExitButton = document.querySelector('#top-chat-box > button');
 
 clickToChat.addEventListener("click", () => {
-
-    chatBox.style.visibility = "visible";
-
+    setTimeout(() => {
+        chatBox.style.visibility = "visible";
+    }, 100);   
 });
 
 chatBoxExitButton.addEventListener('click', () => {
-
-    chatBox.style.visibility = "hidden";
-
+    setTimeout(() => {
+        chatBox.style.visibility = "hidden";
+    }, 100);
 });
 
