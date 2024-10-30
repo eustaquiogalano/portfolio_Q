@@ -1,6 +1,7 @@
 const clickToChat = document.getElementById('chat');
 const chatBox = document.getElementById('chat-box'); 
 const chatBoxExitButton = document.querySelector('#top-chat-box > button');
+const selfIntroductionContainer = document.querySelector('#self-introduction');
 
 clickToChat.addEventListener("click", () => {
     setTimeout(() => {
@@ -14,3 +15,6 @@ chatBoxExitButton.addEventListener('click', () => {
     }, 100);
 });
 
+document.addEventListener('scroll', () => {
+    selfIntroductionContainer.style.display = 'flex';
+})
