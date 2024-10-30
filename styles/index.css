@@ -98,6 +98,18 @@ main {
       width: 100%;
       background-color: var(--dark-theme-bgColor);
       margin-bottom: 10px;
+      padding: 10px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      flex-direction: column;
+
+      div {
+        padding: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: flex-end;
+      }
     }
 
     #bottom-chat-box {
