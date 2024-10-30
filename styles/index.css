@@ -28,6 +28,10 @@ body {
   background: gray;
 }
 
+.visibility-option {
+  visibility: hidden;
+}
+
 header {
   background-color: var(--dark-theme-bgColor);
   padding: .5rem;
@@ -60,6 +64,29 @@ main {
   align-items: center;
   flex-direction: column;
   margin: 68px 0 0;
+
+  #chat-box {
+    height: 400px;
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: gray;
+    position: fixed;
+    left: 1500px;
+    top: 500px;
+    display: none;
+
+    button {
+      height: 30px;
+      width: 30px;
+      border: none;
+      border-radius: 5px;
+      background-color: var(--dark-theme-bgColor);
+      position: absolute;
+      right: 10px;
+      display: none;
+    }
+  }
 
   #self-introduction {
     width: 60%;
