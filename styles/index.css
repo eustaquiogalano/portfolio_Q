@@ -28,6 +28,10 @@ body {
   background: gray;
 }
 
+.toggle-visibility {
+  visibility: hidden;
+}
+
 header {
   background-color: var(--dark-theme-bgColor);
   padding: .5rem;
@@ -50,6 +54,10 @@ header {
         text-decoration: none;
       }
     }
+
+    p:hover {
+      cursor: pointer;
+    }
   }
 
 }
@@ -70,7 +78,6 @@ main {
     position: fixed;
     left: 1100px;
     top: 250px;
-    visibility: hidden;
 
     #top-chat-box {
       height: 8%;

@@ -8,13 +8,13 @@ const middleChatBox = document.querySelector('#middle-chat-box');
 
 clickToChat.addEventListener("click", () => {
     setTimeout(() => {
-        chatBox.style.visibility = "visible";
+        chatBox.classList.toggle('toggle-visibility');
     }, 100);   
 });
 
 chatBoxExitButton.addEventListener('click', () => {
     setTimeout(() => {
-        chatBox.style.visibility = "hidden";
+        chatBox.classList.toggle('toggle-visibility');
     }, 100);
 });
 
