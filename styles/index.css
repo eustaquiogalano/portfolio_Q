@@ -32,6 +32,10 @@ body {
   visibility: hidden;
 }
 
+.toggle-display {
+  display: none;
+}
+
 header {
   background-color: var(--dark-theme-bgColor);
   padding: .5rem;
@@ -147,8 +151,7 @@ main {
     height: 70vh;
     margin: 6rem 1rem 6rem;
     padding: 1rem;
-    display: none;
-
+    
     #q-description {
       width: 65%;
       display: flex;
