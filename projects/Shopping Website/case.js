@@ -10,14 +10,14 @@ let totalPrice;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const addQuantity = () => {
+function addQuantity() {
     itemQuantity++;
     quantityDisplay.innerHTML = `${itemQuantity}`;
     totalPrice = itemPrice * itemQuantity;
     priceDisplay.innerHTML = `$${totalPrice}`;
 };
 
-const subtractQuantity = () => {
+function subtractQuantity() {
 
     if (!(itemQuantity === 0)) {
         itemQuantity--;
@@ -27,11 +27,11 @@ const subtractQuantity = () => {
     }
 };
 
-const shippingWithinMM = () => {
+function shippingWithinMM() {
     priceDisplay.innerHTML = `$${totalPrice += 5}`;
 };
 
-const shippingOutsideMM = () => {
+function shippingOutsideMM() {
     priceDisplay.innerHTML = `$${totalPrice += 10}`;
 };
 
