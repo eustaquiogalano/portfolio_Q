@@ -32,7 +32,3 @@ chatBoxSendButton.addEventListener('click', () => {
 
     chatBoxInput.value = '';
 });
-
-document.addEventListener('scroll', () => {
-    selfIntroductionContainer.style.display = 'flex';
-})
