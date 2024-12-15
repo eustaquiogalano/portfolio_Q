@@ -14,9 +14,13 @@
   color: var(--dark-theme-fontColor);
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: var(--dark-theme-bgColor);
-  font-size: 16px;
+  font-size: 1rem;
   height: 100vh;
 }
 
