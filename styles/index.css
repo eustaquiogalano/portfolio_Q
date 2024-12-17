@@ -51,7 +51,12 @@ header {
   left: 0;
   box-shadow: 0 0px 10px rgba(255, 255, 255, 0.267);
 
-  h1 {
+  #page-title {
+    display: flex;
+    align-items: center;
+  }
+
+  #page-title > h1 {
     font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
   }
 
