@@ -278,4 +278,8 @@ footer {
       margin: 1.5rem;
     }
   }
+
+  #copyright > p {
+    font-size: clamp(0.5rem, 0.62vw, 1.4rem); /*.5rem, 0.62vw, 1.4rem*/
+  } 
 }
