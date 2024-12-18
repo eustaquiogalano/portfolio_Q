@@ -175,11 +175,11 @@ main {
       justify-content: center;
 
       h2 {
-        font-size: clamp(1.3rem, 4vw, 4rem); 
+        font-size: clamp(1.3rem, 4.3vw, 4.3rem); 
       }
 
       p {
-        font-size: clamp(1rem, 1.2vw, 2.5rem); 
+        font-size: clamp(1rem, 1.7vw, 3rem); 
       }
       #socials {
         display: flex;
@@ -280,6 +280,6 @@ footer {
   }
 
   #copyright > p {
-    font-size: clamp(1rem, 0.62vw, 1.4rem); /*.5rem, 0.62vw, 1.4rem*/
+    font-size: clamp(1rem, 0.67vw, 1.9rem); /*.5rem, 0.62vw, 1.4rem*/
   } 
 }
