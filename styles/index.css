@@ -179,7 +179,7 @@ main {
       }
 
       p {
-        font-size: clamp(.8rem, 1.2vw, 2.5rem); 
+        font-size: clamp(1rem, 1.2vw, 2.5rem); 
       }
       #socials {
         display: flex;
@@ -280,6 +280,6 @@ footer {
   }
 
   #copyright > p {
-    font-size: clamp(0.8rem, 0.62vw, 1.4rem); /*.5rem, 0.62vw, 1.4rem*/
+    font-size: clamp(1rem, 0.62vw, 1.4rem); /*.5rem, 0.62vw, 1.4rem*/
   } 
 }
