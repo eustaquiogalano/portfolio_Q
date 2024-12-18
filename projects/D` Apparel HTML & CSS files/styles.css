@@ -12,7 +12,7 @@
   --overall-pad: 2rem;
   --overall-border-radius: 10px;
   --border-main-style: 2px solid rgb(46, 46, 46);
-  --article-width: clamp(250px, 70%, 1000px); /*250px, 50%, 1000px*/
+  --article-width: clamp(230px, 35%, 1000px); /*250px, 50%, 1000px*/
   --article-padding: 100px;
   --paragraph-font-responsiveness: clamp(1rem, , 2rem);
 }
@@ -75,7 +75,7 @@ header {
   align-items: center;
 
   a {
-    font-size: 30px;
+    font-size: clamp(1rem, 1.5vw, 2rem);
   }
 }
 
@@ -106,7 +106,7 @@ main {
 }
 
 .store-img {
-  width: clamp(250px, 50%,  700px); /*250px 50% 700px*/
+  width: clamp(200px, 50%,  700px); /*250px 50% 700px*/
   height: auto;
   border: var(--border-main-style);
   border-radius: 5%;
@@ -174,7 +174,7 @@ th.contri, td.amount {
   margin-bottom: var(--bot-margin);
   display: flex;
   align-items: center;
-  flex-direction:column  ;
+  flex-direction: column;
 }
 
 .top { /* OKAY */
@@ -193,6 +193,9 @@ th.contri, td.amount {
   border-radius: var(--overall-border-radius);
   padding: var(--overall-pad);
   margin-bottom: var(--bot-margin);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .bigas-contribution { /* div */
@@ -229,7 +232,7 @@ p {
   text-align: center;
 }
 
-a:link, :visited, :hover, :active {
+a:link, a:visited, a:hover, a:active {
   color: rgb(46, 46, 46);
   text-decoration: none;
 }
@@ -241,7 +244,7 @@ article p {
 }
 
 h1 {
-  font-size: clamp(24px, 4vw, 48px);
+  font-size: clamp(1.5rem, 2.8vw, 3rem); 
 }
 
 h3 {
@@ -261,7 +264,7 @@ footer {
   border: var(--border-main-style);
   
   a {
-    font-size: 25px;
+    font-size: clamp(1rem, 1.5vw, 2rem);
   }
 }
 
