@@ -14,6 +14,7 @@
   --border-main-style: 2px solid rgb(46, 46, 46);
   --article-width: clamp(250px, 70%, 1000px); /*250px, 50%, 1000px*/
   --article-padding: 100px;
+  --paragraph-font-responsiveness: clamp(1rem, , 2rem);
 }
 
 html {
@@ -128,6 +129,9 @@ main {
 .xp-business { /* Experience in business */
   width: var(--article-width);
   height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction:column;
   border: var(--border-main-style);
   border-radius: var(--overall-border-radius);
   padding: var(--overall-pad);
@@ -168,6 +172,9 @@ th.contri, td.amount {
   border-radius: var(--overall-border-radius);
   padding: var(--overall-pad);
   margin-bottom: var(--bot-margin);
+  display: flex;
+  align-items: center;
+  flex-direction:column  ;
 }
 
 .top { /* OKAY */
@@ -228,7 +235,9 @@ a:link, :visited, :hover, :active {
 }
 
 article p {
-  font-size: clamp(14px, 1rem, 18px);
+  max-inline-size: 66ch;
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
 h1 {
