@@ -243,6 +243,10 @@ article p {
   line-height: 1.65;
 }
 
+article p::first-letter {
+  font-size: 2rem;
+}
+
 h1 {
   font-size: clamp(1.5rem, 2.8vw, 3rem); 
 }
