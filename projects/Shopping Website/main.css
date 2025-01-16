@@ -118,6 +118,7 @@ main {
 
 #shopping-items {
     width: 85%;
+    overflow:auto;
 }
 
 #initial-items-container {
